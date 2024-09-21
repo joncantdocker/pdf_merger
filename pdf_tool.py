@@ -3,6 +3,9 @@ import PyPDF2
 import os
 import argparse
 
+# Usage: python pdf_tool.py merge file1.pdf file2.pdf file3.pdf --output merged.pdf
+# Usage: python pdf_tool.py split file1.pdf file2.pdf --page 1 --output split.pdf
+
 def merge_pdf(pdf_list, output_path):
     merger = PyPDF2.PdfMerger()
     for pdf in pdf_list:
